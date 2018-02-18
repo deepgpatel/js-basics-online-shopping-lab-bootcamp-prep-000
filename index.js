@@ -9,8 +9,11 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
+function addToCart(apples) {
  // write your code here
+ var shoppingCart = cart.push(apples);
+   [shoppingCart] = {[apples]: Math.random() };
+Object.keys(shoppingCart);
 }
 
 function viewCart() {
